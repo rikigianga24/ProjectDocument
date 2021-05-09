@@ -1,0 +1,36 @@
+% Author - Riccardo Giangani
+\documentclass{article}
+
+% Importing settings from our file "setup.sty"
+\usepackage{setup}
+
+% Beginning of document
+\begin{document}
+
+% Inserting title page
+\import{./Sections/}{title}
+
+% Defining front matter settings (Norsk: innstillinger for forord m.m.)
+\frontmatter
+
+% Inserting table of contents
+
+% Inserting list of figures & list of tables
+
+
+% Defining main matter settings (Norsk: innstillinger for hoveddelen av teksten)
+\mainmatter
+
+% Introduction explaining this LaTeX-template
+\import{./Sections/}{Introduction}
+\import{./Sections/}{Context}
+\import{./Sections/}{Network}
+\import{./Sections/}{Project}
+
+
+% Printing bibliography
+\newpage
+\printbibliography[heading = bibintoc]    % 'bibintoc' inserts our bibliography into the table of contents
+
+% End of document
+\end{document}
